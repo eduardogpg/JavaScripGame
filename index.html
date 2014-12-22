@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Pavos</title>
+
+<meta charset="utf-8">
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#about').hide();
+			$('#credito').hide();
+			var bandera = false;
+			var banderaDos = false;
+
+			$('#acerca').click(function(){
+				if(bandera== false){
+					$('#about').show(2000);
+					bandera= true;	
+				}else{
+					$('#about').fadeOut(2000);
+					bandera= false;
+				}
+
+				
+			});
+			$('#creditos').click(function(){
+				if(banderaDos==false){
+					$('#credito').show(2000);
+					banderaDos= true;	
+				}else{
+					$('#credito').fadeOut(2000);	
+					banderaDos = false;
+				}
+
+				
+			});
+		});
+
+	</script>
+
+<body>
+	<link rel="stylesheet" type="text/css" href="extras/index.css">
+	<div id="personaje">
+		<img src="extras/imagenes/personaje_pavo.png">
+	</div>
+
+	<div id="menus">
+		<ul>
+			<li><a href="juego.html"><img src="extras/imagenes/jugar.png" id="jugar"> </a> </li>
+			<li> <img src="extras/imagenes/Acerca.png" id="acerca"> </li>
+			<li> <img src="extras/imagenes/Aprende.png" id="creditos"> </li>
+		</ul>		
+	</div>
+
+	<div id="about">
+		<img src="extras/Up.png">
+		<p><strong>Programador : </strong>García Pérez Eduardo Ismael</p>
+		<br><strong>Carrera : </strong>Desarrollo Softaware<br><br>
+		<strong>Catadratico : </strong>Rocio Cristal<br><br>
+		<strong>Diseñador : </strong>García Pérez Eduardo Ismael<br>
+	</div>
+	<div id="credito">
+
+		<strong><h2>¿Cómo Jugar?</h2></strong>
+	<span>Solo necesitas repeler tres hordas de zorros
+		que intentaran llevarte 10 huevos tuyos.<br>
+		Muevete con las teclas de direcciones y taclea a los zorros con
+		la tecla espaciadora.</span>
+	</div>
+
+</body>
+</html>

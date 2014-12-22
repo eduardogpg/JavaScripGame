@@ -1,0 +1,41 @@
+body{
+	 background-image: url("imagenes/prueba.png");
+}
+#personaje{
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 220px;
+}
+#menus{
+	position: absolute;
+	margin-left: 500px;margin-top: 200px;
+}
+li{
+	margin-top: 20px;
+}
+ul li{
+	cursor: pointer;
+}
+#about{
+	height: 550px;
+	width: 360px;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 900px;
+	background-color: #9E6ECF;
+	border-radius: 10px;
+	padding: 10px;
+}
+#credito{
+	height: 400px;
+	width: 300px;
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 900px;
+	background-color: #9E6ECF;
+	border-radius: 10px;
+	padding: 10px;
+}
+span{
+	font-size: 20pt;
+}
